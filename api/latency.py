@@ -13,7 +13,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-DATA_PATH = Path(__file__).parent.parent / "q-vercel-latency.json"
+DATA_PATH = Path(__file__).parent / "q-vercel-latency.json"
+
 
 def mean(values):
     return sum(values) / len(values) if values else 0
